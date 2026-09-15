@@ -1,0 +1,41 @@
+
+
+Euler-Eucid theorem for perfect numbers : n = 2^(p-1) * (2^p - 1) where 2^p - 1 is a mersenne prime 
+
+
+Steps:
+
+1.Defining mersenne prime first , then perfect number (Seb)
+    f(n) = 2n where f(x) is the sum of the divisors and n is the perfect number 
+
+2. Making a_times_b_coprime lenma (Dimi)
+    f(ab) = f(a)f(b)
+
+3. Show f(2^k) = 2^(k+1) - 1 (Yusuf) hint: geometric series
+
+4. Assuming n is even (Yusuf)
+    Show: n = 2^k * m is odd
+    and:f(n) = f(2^k)f(m)
+
+5. Sub steps 3, 4, 5 into step 1 to get: (Yusuf)
+    2(k+1 - 1) * f(m) = 2 * 2^k * m
+
+6. Showing 2^(k+1) - 1 divides m for: (Harry)
+    m = 2^(k+1) - 1
+    2^(k+1) - 1 is prime 
+
+7. set p = k + 1 for (Seb)
+    n = 2^(p-1) * (2^p - 1)
+
+Luiz
+1st step 
+Defining mersenne prime, then perfect number
+
+do da prime
+state da theorem 
+start lemmas
+
+April 30th fix coprime 
+DO euclid 
+
+mAy 7th Euclid Euler 
