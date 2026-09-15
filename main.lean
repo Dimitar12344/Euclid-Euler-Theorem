@@ -4,27 +4,18 @@ import Library.Basic
 math2001_init
 namespace Nathan
 
-
-
-
-
-
-
+--Nathan is the name of the team of two working on this project
 
 --DEFINITIONS
-
 
 -- mathematically, a mersenne prime is defined by:
 -- M = 2^p - 1 , which is prime and p is prime
 def MersennePrime (M : ℕ) := Prime M ∧ ∃ (p : ℕ), Prime p ∧ M = 2^p - 1
 
-
-
 -- mathematically, a perfect number is defined by:
 -- sigma(N) = 2N, where N is a perfect number and sigma(x) is a function for the sum of all divisors
 def Euclid_Euler_Def (P : ℕ) := ∃ p : ℕ,
 MersennePrime (2^p - 1) ∧ P = 2^(p-1) * (2^p - 1)
-
 
 def sumDivisors : ℕ → ℕ → ℕ
   | _, 0 => 0
@@ -45,20 +36,6 @@ def Perfect (P : ℕ) : Prop :=
 
 #check PerfectCool 7 --Check checks the type
 #check Perfect 7
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 --INTERMEDIATES
 lemma a_times_b_coprime (M a b : ℕ) (h : M = a*b) (hcop : Nat.Coprime a b) (hdiv :sumDivisors (a*b) (a*b)
@@ -110,16 +87,6 @@ lemma sumDivisors_prime (q : ℕ) (hq : Prime q) :
   -- Mathematical proof:
   -- since q is prime its only divisors are 1 and q
   -- so sumDivisors q q = 1 + q = q + 1 ✓
-
-
-
-
-
-
-
-
-
-
 
 --PROOF
 
